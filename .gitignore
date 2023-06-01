@@ -1,160 +1,106 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+unit=(input("unit:"))                                               
+while unit=="u":
+    select=int(input("input_int from 1 to 10 : "))          #  written by Ahsan habib anam.     please help me if you can write more
+    if select==1:
+      print("meter to km")
+      meter=float(input("meter_:"))
+      km=(meter/1000)
+      print(f"{km}__km")
+    elif select==2:
+      print("km to meter")
+      km=float(input("km_: "))
+      Miter=km*1000
+      print(f"{Miter}_m")
+    elif select==3:                 #written by ahsan habib anam.    please help me if you can write more
+      print("kW to hp")
+      kW=float(input("kW_:"))
+      hp=((1000/746)*kW)
+      print(f"{hp}__hp")
+    elif select==4:
+      print("hp to kW")
+      hp=float(input("hp_: "))
+      kW=(0.746*hp)
+      print(f"{kW}__kW")
+    elif select==5:
+      print("C_temperature to F_temperature")
+      C=float(input("C temperature_: "))
+      F=((9*C)/5)+32
+      print(f"{F}__F temperature")
+    elif select==6:
+      print("F_temperature to C_temperature")
+      F=float(input("F_temperature:"))
+      C=((F-32)*5)/9                                    #    written by ahsan habib anam.     please help me if you can write more
+      print(f"{C}__C temperature")
+    elif select==7:
+      print("km/h to m/s")
+      km_per_hour=float(input("km/h__: "))
+      m_per_s=((km_per_hour)*1000)/3600
+      print(f"{m_per_s}__m/s")
+    elif select==8:
+      print("m/s to km/h")
+      meter_per_se=float(input("m/s__: "))
+      km_per_h=(((3600)*meter_per_se)/1000)
+      print(f"{km_per_h}__km/h")
+    elif select==9:
+      print("atm to Pa")
+      atm=float(input("atm__: "))
+      Pa=(atm)*(1.01325*100000)
+      print(f"{Pa}__Pa")
+    elif select==10:
+      print("Pa to atm")
+      Pa=float(input("Pa__:"))
+      atm=((1)/(1.01325*100000))*Pa
+      print(f"{atm}__atm")
+    else:
+      print("please input one integer from 1 to 10")
+    
+while unit=="v":                                                    #  written by ahsan habib anam.      please help me if you can write more
+    select=int(input("from 1 to 3: "))
+    if select==1:
+        student_name=input("student name: ")
+        father_s_name=input("father's name: ")
+        mother_s_name=input("mother's name: ")
+        birht_d=input("birht date: ")
+        natio=input("nationality: ")
+        rili=input("riligion: ")
+        hom=input("home address: ")
+        print(student_name)
+        print(father_s_name)
+        print(mother_s_name)
+        print(birht_d)
+        print(rili)
+        print(hom)
+    elif select==2:
+        school_name=input("school name: ")
+        semister_=input("semister: ")
+        shift=input("shift: ")
+        dipartment=input("dipertment: ")
+        roll=int(input("class roll: "))
+        roll2=int(input("registration no: "))
+        st_id=int(input("student id card: "))
+        print(school_name)
+        print(semister_)
+        print(shift)
+        print(dipartment)
+        print(roll)
+        print(roll2)
+        print(st_id)
+    elif select==3:
+        fa_nid=int(input("father's national ID card: "))       #  written by ahsan habib anam.  please help me if you can write more
+        mo_id=int(input("mother's national ID card:"))
+        stu_id=int(input("student's national ID card: "))
+        print(fa_nid)
+        print(mo_id)
+        print(stu_id)
+    elif select==4:
+        gurdian_na=input("gurdian's name: ")
+        gu_no=int(input("gurdian's phone no: "))
+        rel=input("gurdian relation: ")
+        print(gurdian_na)
+        print(gu_no)
+        print(rel)
+    else:
+        print("please input int from 1 to 3")
+else:
+    print("please, type")
+    print("unit==u or v")
